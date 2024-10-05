@@ -17,5 +17,5 @@ app.use((req, res) => {
 });
 
 listen(port, () => {
-    console.log(`Chemical demo listening on port ${port}`);
+    console.log(`Listening on port ${port}`);
 });

@@ -39,6 +39,18 @@ body {
   animation: infinite glow 2.5s ease-in-out;
 }
 
+#load {
+    font-size: 75px;
+      color: #0073ff;
+      text-shadow: 0 0 7px #0073ff, 0 0 10px #0073ff;
+      animation: infinite glow 2.5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 @keyframes glow {
   0% {
     text-shadow: 0 0 7px #0073ff, 0 0 10px #0073ff;
@@ -180,4 +192,22 @@ body {
   box-shadow: #0088ff 0px 0px 40px;
   background-color: #0088ff;
   width: 350px;
+}
+
+
+#url {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
 }

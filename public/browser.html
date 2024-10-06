@@ -16,21 +16,19 @@
   <script type="text/javascript" src="/assets/particles/particles.js"></script>
   <script type="text/javascript" src="/assets/particles/app.js"></script>
 
-  <nav id="nav">
-    <a id="nav-title" href="/">ELECTRIC</a>
-    <a id="link" href="/settings">Settings</a>
-    <a id="link" href="/cheats">Cheats</a>
-  </nav>
-
-  <div class="title">
-    <h1 id="title">Electric <span id="glow">3.0</span></h1>
+  <div class="center">
+    <span id="load">Loading...</span>
   </div>
-  <form id="f">
-    <input id="i" placeholder="Search with Google or enter address" />
-  </form>
 
+  <iframe id="url">
 
-  <script src="/assets/js/main.js"></script>
+  </iframe>
+
+  <script>
+    let url = localStorage.getItem("url");
+    let iframe = document.getElementById("url");
+    iframe.src = url;
+  </script>
 </body>
 
 </html>

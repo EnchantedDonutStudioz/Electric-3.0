@@ -1,14 +1,16 @@
 {
-  "name": "electric-3.0",
+  "name": "electric",
   "version": "1.0.0",
-  "author": "EnchantedDonutStudioz",
-  "license": "GPL-3.0-only",
-  "type": "module",
+  "description": "The first ever ULTRA Web Proxy",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "node app.js"
   },
+  "author": "EDS",
+  "license": "GNU GENERAL PUBLIC LICENSE",
   "dependencies": {
-    "chemicaljs": "^2.0.2"
+    "chemicaljs": "^1.7.3",
+    "express": "^4.19.2"
   }
 }

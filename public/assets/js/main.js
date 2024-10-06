@@ -1,15 +1,6 @@
 const form = document.getElementById("f");
 const input = document.getElementById("i");
 
-
-
-
-window.addEventListener("chemicalLoaded", async function (e) {
-    console.log("Chemical is loaded: ", chemical.loaded);
-    chemical.setStore("transport", "epoxy");
-    await chemical.setTransport("epoxy");
-});
-
 if (form && input) {
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -20,7 +11,8 @@ if (form && input) {
             searchEngine: "https://www.google.com/search?q=%s"
         })
         console.log(url);
-        window.location.href = url;
+        localStorage.setItem("url", url);
 
+        window.location.href = "/browser.html";
     });
 }

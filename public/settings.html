@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Calculator</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Calculator-icon.png"
-    />
-    <script src="/chemical.js"></script>
-    <script src="/chemical.components.js"></script>
 
-    <link rel="stylesheet" href="/assets/styles/main.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculator</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Calculator-icon.png" />
+  <script src="/chemical.js"></script>
+  <script src="/chemical.components.js"></script>
 
-  <body>
-    <div id="particles-js"></div>
-    <script
-      type="text/javascript"
-      src="/assets/particles/particles.js"
-    ></script>
-    <script type="text/javascript" src="/assets/particles/app.js"></script>
+  <link rel="stylesheet" href="/assets/styles/main.css" />
+</head>
 
-    <nav id="nav">
-      <a id="nav-title" href="/">ELECTRIC</a>
-      <a id="link" href="/settings">Settings</a>
-      <a id="link" href="/cheats">Cheats</a>
-    </nav>
+<body>
+  <div id="particles-js"></div>
+  <script type="text/javascript" src="/assets/particles/particles.js"></script>
+  <script type="text/javascript" src="/assets/particles/app.js"></script>
 
-    <div class="title">
-      <h1 id="title">Settings</h1>
-    </div>
-    <div id="proxy">
-      <h1 id="sub">Proxy</h1>
-      <select
-        id="proxySelect"
-        is="chemical-select"
-        data-default-store="service"
-      >
-        <option value="uv">Ultraviolet</option>
-        <option value="rammerhead">Rammerhead</option>
-      </select>
-    </div>
-  </body>
+  <nav id="nav">
+    <a id="nav-title" href="/">ELECTRIC</a>
+    <a id="link" href="/settings">Settings</a>
+    <a id="link" href="/cheats">Cheats</a>
+  </nav>
+
+  <div class="title">
+    <h1 id="title">Settings</h1>
+  </div>
+  <div id="proxy">
+    <h1 id="sub">Proxy</h1>
+    <select id="proxySelect" is="chemical-select" data-default-store="service">
+      <option value="uv">Ultraviolet</option>
+      <option value="rammerhead">Rammerhead</option>
+    </select>
+  </div>
+
+  <script src="/assets/js/proxychange.js"></script>
+</body>
+
 </html>

@@ -1,30 +1,27 @@
 import { ChemicalServer } from "chemicaljs";
 import express from "express";
 import basicAuth from "express-basic-auth";
+import path from "path";
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const [app, listen] = new ChemicalServer();
 const port = process.env.PORT || 8080;
 
-
 app.use(basicAuth({
-    users: { 'admin': 'password' },
+    users: { 'admin': 'thegreensk1b1d1toiletatemycatandd1ed' },
     challenge: true,
-    unauthorizedResponse: (req, res) => {
-        if (res) {
-            res.sendFile(path.join(__dirname, "auth.html"));
-        } else {
-            console.error("Response object is undefined");
-        }
-    },
 }));
+
 app.use(express.static("public", {
     index: "index.html",
     extensions: ["html"]
 }));
 
 app.get('/success', (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.get('/', (req, res) => {

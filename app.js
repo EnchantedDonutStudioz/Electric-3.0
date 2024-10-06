@@ -10,7 +10,7 @@ app.use(basicAuth({
     users: { 'admin': 'thegreensk1b1d1toiletatemycatandd1ed' },
     challenge: true,
     unauthorizedResponse: (req) => {
-        return path.join("public", "auth.html");
+        return path.join(process.cwd(), "public", "auth.html");
     }
 }));
 
@@ -20,7 +20,7 @@ app.use(express.static("public", {
 }));
 
 app.get('/success', (req, res) => {
-    res.sendFile(path.join("public", "index.html"));
+    res.sendFile(path.join(process.cwd(), "public", "index.html"));
 });
 
 app.get('/', (req, res) => {

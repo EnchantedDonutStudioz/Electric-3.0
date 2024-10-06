@@ -10,7 +10,7 @@ app.use(basicAuth({
     users: { 'admin': 'thegreensk1b1d1toiletatemycatandd1ed' },
     challenge: true,
     unauthorizedResponse: (req) => {
-        return path.join(process.cwd(), "public", "auth.html");
+        return "/public/auth.html"
     }
 }));
 

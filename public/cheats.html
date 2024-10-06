@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Calculator</title>
-		<link
-			rel="icon"
-			type="image/x-icon"
-			href="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Calculator-icon.png"
-		/>
-		<script src="/chemical.js"></script>
-		<script src="/chemical.components.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Calculator-icon.png"
+    />
+    <script src="/chemical.js"></script>
+    <script src="/chemical.components.js"></script>
 
-		<link rel="stylesheet" href="/assets/styles/main.css" />
-	</head>
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+  </head>
 
-	<body>
-		<div id="particles-js"></div>
-		<script
-			type="text/javascript"
-			src="/assets/particles/particles.js"
-		></script>
-		<script type="text/javascript" src="/assets/particles/app.js"></script>
+  <body>
+    <div id="particles-js"></div>
+    <script
+      type="text/javascript"
+      src="/assets/particles/particles.js"
+    ></script>
+    <script type="text/javascript" src="/assets/particles/app.js"></script>
 
-		<nav id="nav">
-			<a id="nav-title" href="/">ELECTRIC</a>
-			<a id="link" href="/settings">Settings</a>
-			<a id="link" href="/cheats">Cheats</a>
-		</nav>
+    <nav id="nav">
+      <a id="nav-title" href="/">ELECTRIC</a>
+      <a id="link" href="/settings">Settings</a>
+      <a id="link" href="/cheats">Cheats</a>
+    </nav>
 
-		<div class="title">
-			<h1 id="title">Cheats</h1>
-		</div>
+    <div class="title">
+      <h1 id="title">Cheats</h1>
+    </div>
 
-		<div id="cheats">
-			<button id="cheat" onclick="blooket()">Blooket</button>
-			<button id="cheat" onclick="gimkit()">Gimkit</button>
-			<button id="cheat" onclick="kahoot()">Kahoot</button>
-		</div>
+    <div id="cheats">
+      <button id="cheat" onclick="blooket()">Blooket</button>
+      <button id="cheat" onclick="gimkit()">Gimkit</button>
+      <button id="cheat" onclick="kahoot()">Kahoot</button>
+    </div>
 
-		<script>
-			function blooket() {
-				fetch("assets/cheats/blooket.txt")
-					.then((response) => response.text())
-					.then((data) => {
-						// Use the fetched text content
-						navigator.clipboard.writeText(data);
-						alert("Copied to clipboard!");
-					})
-					.catch((error) => {
-						console.error("Error fetching blooket text:", error);
-					});
-			}
+    <script>
+      function blooket() {
+        fetch("assets/cheats/blooket.txt")
+          .then((response) => response.text())
+          .then((data) => {
+            // Use the fetched text content
+            navigator.clipboard.writeText(data);
+            alert("Copied to clipboard!");
+          })
+          .catch((error) => {
+            console.error("Error fetching blooket text:", error);
+          });
+      }
 
-			function gimkit() {
-				fetch("assets/cheats/gimkit.txt")
-					.then((response) => response.text())
-					.then((data) => {
-						// Use the fetched text content
-						navigator.clipboard.writeText(data);
-						alert("Copied to clipboard!");
-					})
-					.catch((error) => {
-						console.error("Error fetching gimkit text:", error);
-					});
-			}
+      function gimkit() {
+        fetch("assets/cheats/gimkit.txt")
+          .then((response) => response.text())
+          .then((data) => {
+            // Use the fetched text content
+            navigator.clipboard.writeText(data);
+            alert("Copied to clipboard!");
+          })
+          .catch((error) => {
+            console.error("Error fetching gimkit text:", error);
+          });
+      }
 
-			function kahoot() {
-				fetch("assets/cheats/kahoot.txt")
-					.then((response) => response.text())
-					.then((data) => {
-						// Use the fetched text content
-						navigator.clipboard.writeText(data);
-						alert("Copied to clipboard!");
-					})
-					.catch((error) => {
-						console.error("Error fetching kahoot text:", error);
-					});
-			}
-		</script>
-	</body>
+      function kahoot() {
+        fetch("assets/cheats/kahoot.txt")
+          .then((response) => response.text())
+          .then((data) => {
+            // Use the fetched text content
+            navigator.clipboard.writeText(data);
+            alert("Copied to clipboard!");
+          })
+          .catch((error) => {
+            console.error("Error fetching kahoot text:", error);
+          });
+      }
+    </script>
+  </body>
 </html>

@@ -1,7 +1,7 @@
 * {
   --primary: #000000;
   --secondary: #ffffff;
-  --font: rgb(255, 255, 255);
+  --font: #ffffff;
 }
 
 @font-face {

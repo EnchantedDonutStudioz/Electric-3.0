@@ -9,9 +9,6 @@ const port = process.env.PORT || 8080;
 app.use(basicAuth({
     users: { 'admin': 'thegreensk1b1d1toiletatemycatandd1ed' },
     challenge: true,
-    unauthorizedResponse: (req) => {
-        return "/public/auth.html"
-    }
 }));
 
 app.use(express.static("public", {

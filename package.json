@@ -15,7 +15,7 @@
     "express-basic-auth": "^1.2.1"
   },
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "devDependencies": {},
   "keywords": []

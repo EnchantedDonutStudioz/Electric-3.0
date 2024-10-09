@@ -1,0 +1,6 @@
+FROM webapp.io/node:20
+
+COPY /
+RUN npm install
+RUN BACKGROUND npm start
+EXPOSE WEBSITE localhost:8080

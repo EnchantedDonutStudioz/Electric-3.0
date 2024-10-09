@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculator</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Calculator-icon.png" />
+  <script src="/chemical.js"></script>
+  <script src="/chemical.components.js"></script>
+  <link rel="stylesheet" href="/assets/styles/main.css" />
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <script type="text/javascript" src="/assets/particles/particles.js"></script>
+  <script type="text/javascript" src="/assets/particles/app.js"></script>
+
+  <div class="center">
+    <span id="load">Loading...</span>
+  </div>
+
+  <iframe id="url">
+
+  </iframe>
+
+  <script>
+    let url = localStorage.getItem("url");
+    let iframe = document.getElementById("url");
+    iframe.src = url;
+  </script>
+</body>
+
+</html>

@@ -4,8 +4,10 @@
   "description": "The first ever ULTRA Web Proxy",
   "main": "app.js",
   "type": "module",
+  "homepage": "https://enchanteddonutstudioz.github.io/Electric-3.0/",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "deploy": "gh-pages -d public"
   },
   "author": "EDS",
   "license": "GNU GENERAL PUBLIC LICENSE",
@@ -17,6 +19,8 @@
   "engines": {
     "node": "18.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
   "keywords": []
 }
